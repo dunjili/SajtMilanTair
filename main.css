@@ -3,7 +3,7 @@ body{
    padding: 0px;
 }
 .header {
-    
+    border-bottom: 2px solid rgb(65, 110, 195);
 }
 .page {
     
@@ -12,10 +12,82 @@ body{
     
 }
 .column {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 1000px;
     margin: 0px auto;
 }
 .page .column {
     height: 100vh;
+}
+
+#logo_i_social {
+    display: flex;
+}
+
+#logo {
+    flex-grow: 1;
+}
+
+#logo img {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+
+#social {
+    flex-grow: 1;
+    text-align: right;
+}
+
+#social a {
+    text-decoration: none;
+}
+
+#social a img {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+
+#main_nav {
+    display: flex;
+}
+
+#main_nav  a {
+    flex-grow: 1;
+    text-align: center;
+    display: block;
+    padding: 10px 0px;
+    text-decoration: none;
+    color:  rgb(65, 110, 195);
+    transition: 200ms;
+}
+
+#main_nav  a:hover,
+#main_nav  a.activ {
+    background:  rgb(65, 110, 195);
+    color: white;
+}
+
+#firstPage {
+    text-align: center;
+    color: white;
+    background-image: url(pic/galaxy.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+#firstPage h1 {
+    font-size: 48pt;
+    margin-top: 0px;
+    padding-top: calc(50vh - 125px);
+}
+
+.darkBox {
+    background-color:  rgba(145, 160, 205, 0.5);
+    border: 1px solid white;
+    font-size: 24px;
+
 }
