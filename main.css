@@ -75,8 +75,6 @@ body{
     background-image: url(pic/galaxy.jpeg);
     background-size: cover;
     background-attachment: fixed;
-
-
 }
 
 #firstPage h1 {
@@ -89,5 +87,74 @@ body{
     background-color:  rgba(145, 160, 205, 0.5);
     border: 1px solid white;
     font-size: 24px;
+}
 
+#learn {
+    background-image: url(pic/OakTree.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#contact {
+    background-image: url(pic/building.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.circles {
+    display: flex;
+    margin: 50px 0px 100px 0px;
+    padding: 25px 0px;
+}
+
+.circleHolder {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.circle {
+    background: rgb(65, 110, 195);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 25%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.circleText {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.tehnologies {
+    display: flex;
+    margin: 50px 0px;
+}
+.teh {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.teh img {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.teh p {
+    font-weight: bold;
+}
+
+.aboutUs {
+    text-align: center;
+    padding-top: calc(50vh - 43vh);
+    padding-top: calc(50vh - 46vh);
 }
