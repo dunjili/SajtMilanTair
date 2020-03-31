@@ -90,7 +90,7 @@ body{
 }
 
 #learn {
-    background-image: url(pic/OakTree.jpg);
+    background-image: url(pic/developer.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -157,4 +157,62 @@ body{
     text-align: center;
     padding-top: calc(50vh - 43vh);
     padding-top: calc(50vh - 46vh);
+}
+
+#learn {
+    color:white;
+}
+
+#learn h2 {
+    text-align: center;
+    padding-top: calc(50vh - 43vh);
+    padding-top: calc(50vh - 46vh);
+}
+
+#learn p {
+    font-size: large;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 0px 0px 20px 30px rgb(0, 40, 115);
+    font-weight: bold;
+}
+
+.courses {
+    display: flex;
+    padding: 15px;
+    justify-content: space-evenly;
+    
+}
+
+.courses > div {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#learn img {
+        height: 150px;
+        width: 150px;
+        margin: 5px;
+    }
+
+#learn a {
+    text-decoration: none;
+    color:rgb(65, 110, 195);
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    border: 3px solid rgb(65, 110, 195);
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgb(0, 40, 115);
+    transition: 400ms;
+}
+
+.courses figure {
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgb(0, 40, 115);
+}
+
+#learn a :hover {
+    color: rgb(0, 35, 100);
 }
