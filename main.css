@@ -95,12 +95,6 @@ body{
     background-attachment: fixed;
 }
 
-#contact {
-    background-image: url(pic/building.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 .alignCenter {
     text-align: center;
 }
@@ -300,4 +294,64 @@ body{
 .service:hover .textHolder {
     opacity: 1.0;
     box-shadow: 5px 5px 20px rgb(0, 40, 115);
+}
+
+#career {
+    background-image: url(pic/building.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#career h2 {
+    padding-top: calc(50vh - 41vh);
+    padding-bottom: calc(50vh - 45vh);
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.careerColumns {
+    display: flex;
+}
+
+.jobList {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.jobDescriptions {
+    flex-grow: 2;
+    flex-basis: 0;
+}
+
+.jobList label {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solidwhite;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgb(0, 40, 115);
+    padding:  10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.jobDescriptions input {
+    display: none;
+}
+
+.jobDescriptions .jobDescription {
+    display: none;
+}
+
+.jobDescriptions input:checked+.jobDescription{
+    display: block;
+}
+
+.jobDescription {
+    margin-left: 10px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgb(0, 40, 115);
+    padding:  10px;
+    font-size: 20px;
 }
