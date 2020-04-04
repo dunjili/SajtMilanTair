@@ -1,6 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
    margin: 0px; 
    padding: 0px;
+   font-family: Calibri, sans-serif;
 }
 .header {
     border-bottom: 2px solid rgb(65, 110, 195);
@@ -9,9 +14,7 @@ body{
 .page {
     
 }
-.futer {
-    
-}
+
 .column {
     width: 900px;
     margin: 0px auto;
@@ -354,4 +357,64 @@ body{
     color: rgb(0, 40, 115);
     padding:  10px;
     font-size: 20px;
+}
+
+#contact h2 {
+    padding-top: calc(50vh - 41vh);
+    padding-bottom: calc(50vh - 45vh);
+    text-align: center;
+}
+
+.contactRegion {
+    display: grid;
+    grid-template: "address map"
+                    "emails map";
+    grid-template-columns: 300px 1fr;
+}
+
+.contactAddress {
+    grid-area: address;
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+
+.contactMails {
+    grid-area: emails;
+    font-size: 14px;
+}
+
+.contactMap {
+    grid-area: map;
+}
+
+.footer {
+    border-top: 2px solid rgb(65, 110, 195);
+}
+
+.footer > .column {
+    display: flex;
+}
+
+.footer .footerColumn {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.alignLeft {
+    text-align: left;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+.redLink {
+    text-decoration: none;
+    color: red;
+}
+
+.redLink:hover {
+    text-decoration: underline;
 }
