@@ -359,10 +359,62 @@ body{
     font-size: 20px;
 }
 
+#calendar {
+    color: rgb(0, 40, 115);
+}
+
+#calendar h2 {
+    padding-top: calc(50vh - 45vh);
+    padding-bottom: calc(50vh - 45vh);
+    text-align: center;
+    font-size: 30px;
+}
+
+#tableCalendar {
+    border: 4px solid rgb(65, 110, 195);
+    border-collapse: collapse;
+}
+
+#tableCalendar thead tr th {
+    font-size: 30px;
+    background-color: rgb(205, 225, 255);
+}
+
+#tableCalendar tbody tr td {
+    font-size: 15px;
+    padding: 5px;
+    width: 130px;
+    height: 100px;
+    /*background-color: rgb(240, 245, 255);*/
+    border: 2px dashed rgb(65, 110, 195);
+    text-align: right;
+    vertical-align: top;
+}
+
+#tableCalendar tbody tr:nth-child(odd) td {
+    background-color: rgb(245, 245, 255);}
+
+#tableCalendar tbody tr td:nth-child(6) {
+    background-color: rgb(230, 230, 255);
+}
+
+#tableCalendar tbody tr td:nth-child(7) {
+    background-color: rgb(205, 220, 255);
+}
+
+#contact {
+    background-image: url(pic/salas.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 #contact h2 {
+    color: gold;
     padding-top: calc(50vh - 41vh);
     padding-bottom: calc(50vh - 45vh);
     text-align: center;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px black;
 }
 
 .contactRegion {
@@ -373,12 +425,15 @@ body{
 }
 
 .contactAddress {
+    background-color: rgba(145, 145, 145, 0.5);
     grid-area: address;
     padding-bottom: 15px;
     font-size: 14px;
 }
 
 .contactMails {
+    background-color: rgba(145, 145, 145, 0.5);
+    font-style: italic;
     grid-area: emails;
     font-size: 14px;
 }
@@ -416,5 +471,15 @@ body{
 }
 
 .redLink:hover {
+    text-decoration: underline;
+}
+
+.goldLink {
+    text-decoration: none;
+    text-shadow: 2px 2px 5px black;
+    color: gold;
+}
+
+.goldLink:hover {
     text-decoration: underline;
 }
