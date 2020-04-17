@@ -11,7 +11,7 @@ function fillCalendar(year, month) {
 
     let nameOfMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     let nameOfChosenMonth = nameOfMonths[month-1];
-    let titleForTitle = nameOfChosenMonth +' '+ year;
+    let titleForTitle = nameOfChosenMonth +' - '+ year;
     document.getElementById('title').innerText = titleForTitle;
 
     let firstDateOfChosenMonth = new Date(year, month-1, 1);
