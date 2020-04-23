@@ -1,0 +1,104 @@
+body {
+    font-family: sans-serif;
+    color: grey;
+}
+
+label {
+    font-size: 12pt;  
+}
+
+div {
+    margin: 0px 0px 15px 5px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15pt;
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+    padding: 2px 4px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.button:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+.button.green {
+    background-color: green;
+    color: white;
+}
+
+.button.green:hover {
+    background-color: white;
+    color: green;
+    border-color: green;
+}
+
+.button.red {
+    background-color: red;
+    color: white;
+}
+
+.button.red:hover {
+    background-color: white;
+    color: red;
+    border-color: red;
+}
+
+.inputCollum {
+    margin: 2px 0px 30px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+    .inputCollum > input[type="text"],
+    .inputCollum > input[type="date"],
+    .inputCollum > input[type="tel"],
+    .inputCollum > input[type="email"],
+    
+    .inputCollum > textarea
+     {
+        border: none;
+        border-bottom: 1px solid black;
+        padding: 10px 5px;
+        width: 450px;
+    }
+
+    .inputCollum > input[type="date"] {
+        width: fit-content;
+        padding: 2px 0px 0px 2px;
+    }
+
+    .inputCollum > textarea {
+        border-left: 1px solid lightgrey;
+    }
+
+    .inputCollum > select {
+        padding: 2px 2px;
+        font-size: 12px;
+        width: fit-content;
+    }
+
+.inputCombined {
+    margin: 2px 0px 30px 0px;
+    
+}
+
+    .inputCombin > input[type="checkbox"],
+    .inputCombin > input[type="radio"]
+    .inputCombin > select {
+        margin-right: 10px;
+    }
+
+.inputCollum > input:invalid,
+.inputCollum > textarea:invalid {
+    background-color: rgb(255, 95, 95);
+}
+

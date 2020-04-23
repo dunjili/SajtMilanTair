@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stranica2formular</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main2Form.css">
+    </head>
+    <body>
+
+        <div class="form">
+            <a href="index2Form.html" class="button">Poništi sve unete vrednosti</a>
+            <div class="inputCollum">
+                <label>Ime:</label>
+                <input type="text" minlength="2" maxlength="50">
+            </div>
+            <div class="inputCollum">
+                <label>Prezime:</label>
+                <input type="text" minlength="2" maxlength="50">
+            </div>
+            <div class="inputCollum">
+                <label>Datum rođenja:</label>
+                <input type="date">
+            </div>
+            <div class="inputCollum">
+                <label>Adresa stanovanja:</label>
+                <input type="text" minlength="2" maxlength="100">
+            </div>
+            <div class="inputCollum">
+                <label>Tel:</label>
+                <input type="tel" >
+            </div>
+            <div class="inputCollum">
+                <label>Email:</label>
+                <input type="email">
+            </div>
+            <div class="inputCollum">
+                <label>Završena škola:</label>
+                <input type="text" minlength="2" maxlength="100">
+            </div>
+            <div class="inputCombined">
+                <label>Stepen stručne spreme:</label><br />
+                <input type="radio" name="stepenStrucneSpreme" id="sss1" value="1">
+                <label for="sss1">1</label><br />
+                <input type="radio" name="stepenStrucneSpreme" id="sss2" value="2">
+                <label for="sss2">2</label><br />
+                <input type="radio" name="stepenStrucneSpreme" id="sss3" value="3">
+                <label for="sss3">3</label><br />
+                <input type="radio" name="stepenStrucneSpreme" id="sss4" value="4">
+                <label for="sss4">4</label><br />
+                <input type="radio" name="stepenStrucneSpreme" id="sss5" value="5">
+                <label for="sss5">5</label><br />
+                <input type="radio" name="stepenStrucneSpreme" id="sss6.1" value="6.1">
+                <label for="sss6.1">6.1</label><br />
+                <input type="radio" name="stepenStrucneSpreme" id="sss6.2" value="6.2">
+                <label for="sss6.2">6.2</label><br />
+                <input type="radio" name="stepenStrucneSpreme" id="sss7.1" value="7.1">
+                <label for="sss7.1">7.1</label><br />
+                <input type="radio" name="stepenStrucneSpreme" id="sss7.2" value="7.2">
+                <label for="sss7.2">7.2</label><br />
+                <input type="radio" name="stepenStrucneSpreme" id="sss8" value="8">
+                <label for="sss8">8</label><br />
+            </div>
+            <div class="inputCombined">
+                <label>Pozicija na koju/koje aplicirate:</label><br />
+                <input type="checkbox" name="webDesigner" id="job1" value="webDesigner">
+                <label for="job1">Webpage designer</label><br />
+                <input type="checkbox" name="javaScript" id="job2" value="javaScript">
+                <label for="job2">JavaScript developer</label><br />
+                <input type="checkbox" name="Java" id="job3" value="Java">
+                <label for="job3">Java developer</label><br />
+                <input type="checkbox" name="dataBase" id="job4" value="dataBase">
+                <label for="job4">DB administrator</label><br />
+                <input type="checkbox" name="publicRelations" id="job5" value="publicRelations">
+                <label for="job5">Public relations</label><br />           
+            </div>
+            <div class="inputCombined">
+                <label>Grad u kom vas zanima da radite:</label>
+                <select>
+                    <option value="GT">Gornji Tavankut</option>
+                    <option value="DT">Donji Tavankut</option>
+                    <option value="SU">Subotica</option>
+                    <option value="NS">Novi Sad</option>
+                    <option value="BG">Beograd</option>
+                </select>
+            </div>
+            <div class="inputCollum">
+                <label>Zašto aplicirate u našoj kompaniji?</label>
+                <textarea rows="4" minlength="2" maxlength="5000"></textarea>
+            </div>
+            <button class="button green">Prijava</button><a href="index.html#career" class="button red">Odustani</a>  
+        </div>
+    </body>
+</html>
